@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            para{ 
+            font-weight:bold;
+            font-size:x-large;
+            animation-name: colorchange;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            -webkit-animation-name: colorchange;
+            -webkit-animation-duration: 2s;
+            }
+
+            @keyframes colorchange {
+            0% {color: red;}
+            20% {color: orange;}
+            40% {color: yellow;}
+            60% {color: green;}
+            80% {color: blue;}
+            100% {color: red;}
+            }
+
+            @-webkit-keyframes colorchange {
+                0% {color: red;}
+                20% {color: orange;}
+                40% {color: yellow;}
+                60% {color: green;}
+                80% {color: blue;}
+                100% {color: red;}
+            }
+
+            a:link{
+            text-decoration: none;
+            }            
+        </style>
+    </head>
+    <body>
+        <marquee behaviour="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount=3>
+                <p><img src="new.gif"><a href="https://www.google.com" target="_blank"><para> Google</para></a></p>
+                <p><img src="new.gif"><a href="https://www.facebook.com" target="_blank"><para> Facebook</para></a></p>
+        </marquee>
+    </body>
+</html>
