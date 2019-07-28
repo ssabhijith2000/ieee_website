@@ -1,43 +1,90 @@
 <html>
-    <head>
-        <style>
-            para{ 
-            font-weight:bold;
-            font-size:x-large;
+
+<head>
+    <style>
+        para {
+            font-weight: bold;
+            font-size: x-large;
             animation-name: colorchange;
-            animation-duration: 2s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
             -webkit-animation-name: colorchange;
-            -webkit-animation-duration: 2s;
+            -webkit-animation-duration: 4s;
+        }
+        
+        @keyframes colorchange {
+            0% {
+                color: red;
+                text-shadow: 3px 3px 5px rgb(255, 174, 0);
             }
-
-            @keyframes colorchange {
-            0% {color: red;}
-            20% {color: orange;}
-            40% {color: yellow;}
-            60% {color: green;}
-            80% {color: blue;}
-            100% {color: red;}
+            20% {
+                color: orange;
+                text-shadow: 3px 3px 5px rgb(255, 187, 0);
             }
-
-            @-webkit-keyframes colorchange {
-                0% {color: red;}
-                20% {color: orange;}
-                40% {color: yellow;}
-                60% {color: green;}
-                80% {color: blue;}
-                100% {color: red;}
+            40% {
+                color: green;
+                text-shadow: 3px 3px 5px rgb(0, 132, 255);
             }
-
-            a:link{
+            60% {
+                color: blue;
+                text-shadow: 3px 3px 5px rgba(0, 255, 42, 0.815);
+            }
+            80% {
+                color: yellow;
+                text-shadow: 3px 3px 5px rgb(247, 0, 255);
+            }
+            100% {
+                color: red;
+                text-shadow: 3px 3px 5px rgb(255, 174, 0);
+            }
+        }
+        
+        @-webkit-keyframes colorchange {
+            0% {
+                color: red;
+                text-shadow: 3px 3px 5px rgb(255, 174, 0);
+            }
+            20% {
+                color: orange;
+                text-shadow: 3px 3px 5px rgb(255, 187, 0);
+            }
+            40% {
+                color: green;
+                text-shadow: 3px 3px 5px rgb(0, 132, 255);
+            }
+            60% {
+                color: blue;
+                text-shadow: 3px 3px 5px rgba(0, 255, 42, 0.815);
+            }
+            80% {
+                color: magenta;
+                text-shadow: 3px 3px 5px rgb(0, 217, 255);
+            }
+            100% {
+                color: red;
+                text-shadow: 3px 3px 5px rgb(255, 174, 0);
+            }
+        }
+        
+        a:link {
             text-decoration: none;
-            }            
-        </style>
-    </head>
-    <body>
-        <marquee behaviour="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount=3>
-                <p><img src="new.gif"><a href="https://www.google.com" target="_blank"><para> Google</para></a></p>
-                <p><img src="new.gif"><a href="https://www.facebook.com" target="_blank"><para> Facebook</para></a></p>
-        </marquee>
-    </body>
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behaviour="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount=3>
+        <p><img src="new.gif">
+            <a href="https://www.google.com" target="_blank">
+                <para> Google is a great platform to search</para>
+            </a>
+        </p>
+        <p><img src="new.gif">
+            <a href="https://www.facebook.com" target="_blank">
+                <para> Facebook is the most popular social media platform</para>
+            </a>
+        </p>
+    </marquee>
+</body>
+
 </html>
